@@ -91,6 +91,12 @@ document.addEventListener('DOMContentLoaded', () => {
             timerContainer.innerHTML = "<div style='font-size: 2rem; color: #ffffff;'>Event Started!</div>";
         }
     }, 1000);
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
 
     // Mobile Menu Toggle (Basic implementation)
     // Create hamburger icon
