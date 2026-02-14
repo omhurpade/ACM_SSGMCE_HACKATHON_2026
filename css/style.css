@@ -22,7 +22,21 @@
     --spacing-lg: 2rem;
     --spacing-xl: 4rem;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -880,3 +894,18 @@ footer {
         border-radius: 12px 12px 0 0;
     }
 }
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+display: flex;
+flex-wrap: wrap;
