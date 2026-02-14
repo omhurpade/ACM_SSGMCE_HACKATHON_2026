@@ -54,7 +54,8 @@ body {
 /* Glitch Effect */
 .glitch {
     position: relative;
-    /* color: var(--text-color); removed to inherit color */
+    display: inline-block;
+  overflow: hidden;/* color: var(--text-color); removed to inherit color */
 }
 
 .glitch::before,
