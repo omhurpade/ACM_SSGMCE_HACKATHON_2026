@@ -324,3 +324,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+document.getElementById("chatbot-btn").onclick = function() {
+    alert("Button clicked!");
+}
