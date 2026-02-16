@@ -514,6 +514,8 @@ nav {
 .faq-item {
     cursor: pointer;
     transition: all 0.3s ease;
+    z-index: 10;
+    position: relative;
 }
 
 .faq-item:hover {
@@ -968,19 +970,4 @@ footer {
         height: 60vh;
         border-radius: 12px 12px 0 0;
     }
-}
-
-#chatbot-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99999;   /* VERY IMPORTANT */
-}
-.container {
-    overflow: hidden;
-}
-.hero-section {
-    position: absolute;
-    width: 100%;
-    height: 100vh;
 }
