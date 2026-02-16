@@ -813,6 +813,18 @@ footer {
     overflow: hidden;
 }
 
+.profile-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;  /* try this if face is slightly upper */
+  border: 3px dashed #00f7ff;
+  padding: 5px;
+  background-color: #111;
+}
+
+
 .team-img-placeholder img {
     width: 100%;
     height: 100%;
