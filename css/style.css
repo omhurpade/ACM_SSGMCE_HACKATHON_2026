@@ -513,7 +513,13 @@ nav {
 
 .faq-item {
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.2);
+    border-color: var(--accent-secondary);
 }
 
 .faq-question {
@@ -526,6 +532,11 @@ nav {
 .faq-question h3 {
     margin: 0;
     font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.faq-item:hover .faq-question h3 {
+    color: var(--accent-secondary);
 }
 
 .faq-answer {
@@ -542,15 +553,11 @@ nav {
 
 .faq-item.active .faq-answer {
     max-height: 200px;
-    /* Approximate height */
 }
 
 .faq-item.active .faq-question i {
     transform: rotate(180deg);
-}
-
-.faq-item.active .hero-content .btn:active {
-    transform: translateY(1px);
+    color: var(--accent-secondary);
 }
 
 .theme-text {
@@ -840,6 +847,16 @@ footer {
     z-index: 1000;
     box-shadow: 0 0 15px var(--accent-secondary);
     padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+#chatbot-fab:hover {
+    transform: scale(1.1) rotate(10deg);
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.8);
+    background-color: #000;
+    color: var(--accent-primary);
+    border: 1px solid var(--accent-primary);
 }
 
 #chatbot-container {
